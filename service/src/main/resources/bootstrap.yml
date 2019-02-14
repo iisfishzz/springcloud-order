@@ -1,0 +1,18 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIG #这里的ID是config服务端的application-name
+      profile: test
+    stream:
+      bindings:
+        myQueue:
+          group: order
+
+  application:
+    name: order
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
