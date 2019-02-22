@@ -34,6 +34,7 @@ public class OrderController {
     private OrderService orderService;
 
     /**
+     * 只允许买家创建订单
      * 1. 参数检验
      * 2. 查询商品信息(调用商品服务)
      * 3. 计算总价
@@ -63,7 +64,7 @@ public class OrderController {
     }
 
     /**
-     * 完结订单
+     * 完结订单 只允许卖家操作
      * @param orderId
      * @return
      */

@@ -1,11 +1,13 @@
 package com.imooc.order.exception;
 
 import com.imooc.order.enums.ResultEnum;
+import lombok.Getter;
 
 /**
  * Created by 廖师兄
  * 2017-12-10 17:27
  */
+@Getter
 public class OrderException extends RuntimeException {
 
     private Integer code;
