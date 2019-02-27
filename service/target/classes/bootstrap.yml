@@ -12,7 +12,23 @@ spring:
 
   application:
     name: order
+  zipkin:
+    base-url: http://192.168.106.135:9411/
+  sleuth:
+    sampler:
+      probability: 1
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+feign:
+  hystrix:
+    enabled: true
+

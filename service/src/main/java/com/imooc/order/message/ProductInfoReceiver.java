@@ -1,6 +1,6 @@
 package com.imooc.order.message;
 
-import com.imooc.order.dataobject.ProductInfoOutput;
+import com.imooc.common.ProductInfoOutput;
 import com.imooc.order.utils.JsonUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.Queue;
